@@ -1,0 +1,54 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todoText {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 5px 0;
+  word-break: break-word; /* Ensures long words break and wrap */
+}
+
+.todoText.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.editInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}

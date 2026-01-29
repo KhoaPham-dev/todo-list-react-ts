@@ -1,0 +1,22 @@
+.clearCompletedContainer {
+  margin-top: 20px;
+}
+
+.clearButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clearButton:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.clearButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
